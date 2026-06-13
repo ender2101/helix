@@ -1,11 +1,11 @@
-# Theme: Ao
-# Author: YardQuit
+# Theme: Anubis
+# Author: ndr/YardQuit
 
 # SYNTAX HIGHLIGHTING
 "attribute" = { fg = "yellow" }
 "type" = { fg = "white" }
 "type.builtin" = { fg = "white" }
-"type.parameter" = { fg = "white" }
+"type.parameter" = { fg = "white", modifiers = ["bold"] }
 "type.enum" = { fg = "white" }
 "type.enum.variant" = { fg = "white" }
 "constructor" = { fg = "orange" }
@@ -111,7 +111,7 @@
 "ui.menu" = { fg = "winter_sky", bg = "midnight_thunder" }                                           # code and command completion menus ":"
 "ui.menu.selected" = { fg = "winter_sky", bg = "twilight_blue" }                                     # selected autocomplete item
 "ui.menu.scroll" = { fg = "crystal_blue", bg = "moonlight_ocean" }                                   # scrollbar
-"ui.highlight" = { underline = { color = "sky_blue", style = "line" } }                              # highlighted lines in the picker preview
+"ui.highlight" = { bg = "ui_highlight" }                                                             # highlighted lines in the picker preview
 
 # USER INTERFACE - DIAGNOSTICS
 "warning" = { fg = "lemon_zest" }                                                                    # diagnostics warning (gutter)
@@ -149,6 +149,7 @@ rustic_amber = "#9d5800"
 slate_purple = "#d2a8ff"
 light_purple = "#7533bd"
 deep_purple = "#4c1785"
+ui_highlight = "#2e323d"
 
 # SYNTAX HIGHLIGHTING
 black = "#0d1117"
