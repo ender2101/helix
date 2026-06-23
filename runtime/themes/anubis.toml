@@ -114,19 +114,24 @@
 "ui.highlight" = { bg = "ui_highlight" }                                                             # highlighted lines in the picker preview
 
 # USER INTERFACE - DIAGNOSTICS
-"warning" = { fg = "lemon_zest" }                                                                    # diagnostics warning (gutter)
-"error" = { fg = "ruby_glow" }                                                                       # diagnostics error (gutter)
-"info" = { fg = "sky_blue" }                                                                         # diagnostics info (gutter)
 "hint" = { fg = "walnut_brown" }                                                                     # diagnostics hint (gutter)
+"info" = { fg = "sky_blue" }                                                                         # diagnostics info (gutter)
+"warning" = { fg = "lemon_zest" }                                                                    # diagnostics warning (gutter)
+"error" = { fg = "bright_red" }                                                                      # diagnostics error (gutter)
 "diagnostic" = { modifiers = ["reversed"] }                                                          # diagnostics fallback style (editing area)
-"diagnostic.hint" = { fg = "deep_abyss", bg = "walnut_brown" }                                       # diagnostics hint (editing area)
-"diagnostic.info" = { fg = "winter_sky", bg = "twilight_blue" }                                      # diagnostics info (editing area)
-"diagnostic.warning" = { fg = "winter_sky", bg = "rustic_amber" }                                    # diagnostics warning (editing area)
-"diagnostic.error" = { fg = "winter_sky", bg = "rustic_red" }                                        # diagnostics error (editing area)
+"diagnostic.unnecessary" = { fg = "slate_gray", modifiers = ["dim"] }
+"diagnostic.hint" = { fg = "walnut_brown", modifiers = ["underlined"] }                              # diagnostics hint (editing area)
+"diagnostic.info" = { fg = "dreamy_blue", modifiers = ["underlined"] }                               # diagnostics info (editing area)
+"diagnostic.warning" = { fg = "bacon_yellow", modifiers = ["underlined"] }                           # diagnostics warning (editing area)
+"diagnostic.error" = { fg = "bacon_pink", modifiers = ["underlined"] }                               # diagnostics error (editing area)
 
 # COLOR NAMES
 [palette] 
 # PALETTE USER INTERFACE
+bright_red = "#d13a1c"
+bacon_red = "#c0392b"
+bacon_pink = "#ff5f87"
+bacon_yellow = "#fdbc4b"
 deep_abyss = "#080d15"
 stormy_night = "#254862"
 nightfall_blue = "#1f2937"
@@ -162,5 +167,3 @@ purple = "#d2a8ff"
 brown = "#987654"
 gray = "#838a97"
 white = "#dadada"
-
-
